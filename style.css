@@ -1,0 +1,671 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+:root {
+    --roxo-motivus: #820AD1; 
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    color: #FAF9FD;
+
+}
+
+header {
+
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+header img {
+
+  width: 100px;
+  
+
+
+}
+
+header .container-grid {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu {
+
+    width: 503px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu a {
+
+    font-size: 17px;
+    font-family: "Montserrat";
+    color: #3b3b3b;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness:2px ;
+
+    transition: text-decoration 500ms ease;
+}
+
+.menu a:hover {
+    text-decoration-color: var(--roxo-motivus) ;
+
+}
+
+.conteudo-header {
+
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+#slogan {
+    height: 125px;
+
+}
+
+h2 {
+
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 35px;
+    color: #272727;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+#banner {
+
+    height: 745px;
+    background-image: url(img/pexels-kowalievska-1174597.jpg);
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    align-items: flex-start;
+
+    position: relative;
+
+    
+}
+
+.filtro {
+    width: 100%;
+    height: 100%;
+
+    background-color: #47208bc2;
+    opacity: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+#sobre {
+    color: #ebebeb;
+    height: 645px;
+    padding: 100px 25%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    text-align: center;
+
+}
+
+#sobre p {
+
+    font-family: "Montserrat";
+    color: #272727;
+    font-size: 17px;
+    align-items: center;
+    
+
+    line-height: 1.5;
+}
+
+
+#portfolio {
+    height: 250px;
+
+    background-image: url(img/pexels-nietjuh-776657.jpg);
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    background-position: 50% 50%;
+
+    background-attachment: fixed;
+
+    position: relative;
+
+    margin-bottom: 120px;
+}
+
+.filtro {
+    width: 100%;
+    height: 100%;
+
+    background-color: #47208bc2;
+    opacity: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+.container {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 22em;
+    max-width: 80%;
+    padding: 2em 0;
+    background: #FFF;
+    box-shadow: 0 0 6px 0 rgba(32, 32, 36, 0.12);
+    transition: all 0.35s ease;
+  }
+  
+  .card::before, .card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: orange;
+    height: 4px;
+  }
+  
+  .card::before {
+    width: 0;
+    opacity: 0;
+    transition: opacity 0 ease, width 0 ease;
+    transition-delay: 0.5s;
+  }
+  
+  .card::after {
+    width: 100%;
+    background: white;
+    transition: width 0.5s ease;
+  }
+  
+  .card .content {
+    width: 18em;
+    max-width: 80%;
+  }
+  
+  .card .logo {
+    margin: 0 0 1em;
+    width: 10.625em;
+    transition: all 0.35s ease;
+  }
+  
+  .card .h6 {
+    color: #999999;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+  
+  .card .hover_content {
+    overflow: hidden;
+    max-height: 0;
+    transform: translateY(1em);
+    transition: all 0.55s ease;
+  }
+  
+  .card .hover_content p {
+    margin: 1.5em 0 0;
+    color: #6E6E70;
+    line-height: 1.4em;
+  }
+  
+  .card:hover {
+    width: 24em;
+    box-shadow: 0 10px 20px 0 rgba(32, 32, 36, 0.12);
+  }
+  
+  .card:hover::before {
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.5s ease, width 0.5s ease;
+    transition-delay: 0;
+  }
+  
+  .card:hover::after {
+    width: 0;
+    opacity: 0;
+    transition: width 0 ease;
+  }
+  
+  .card:hover .logo {
+    margin-bottom: 0.5em;
+  }
+  
+  .card:hover .hover_content {
+    max-height: 10em;
+    transform: none;
+  }#container  {
+
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+ 
+ 
+ #container h2 {
+ 
+     display: flex;
+     align-items: flex-start;
+     justify-content: center;
+ }
+ 
+ 
+ .card {
+ 
+     font-family: "Montserrat";
+     display: flex;
+     flex-direction: row;
+ }
+ 
+ 
+ 
+ .container {
+     height: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+   
+   .card {
+     position: relative;
+     display: flex;
+     justify-content: center;
+     cursor: pointer;
+     width: 22em;
+     max-width: 80%;
+     padding: 2em 0;
+     background: #FFF;
+     box-shadow: 0 0 6px 0 rgba(32, 32, 36, 0.12);
+     transition: all 0.35s ease;
+   }
+   
+   .card::before, .card::after {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     background: var(--roxo-motivus);
+     height: 4px;
+   }
+   
+   .card::before {
+     width: 0;
+     opacity: 0;
+     transition: opacity 0 ease, width 0 ease;
+     transition-delay: 0.5s;
+   }
+   
+   .card::after {
+     width: 100%;
+     background: white;
+     transition: width 0.5s ease;
+   }
+   
+   .card .content {
+     width: 18em;
+     max-width: 80%;
+   }
+   
+   .card .logo {
+     margin: 0 0 1em;
+     width: 10.625em;
+     transition: all 0.35s ease;
+   }
+   
+   .card .h6 {
+     color: #999;
+     font-weight: 600;
+     text-transform: uppercase;
+     margin: 0;
+     letter-spacing: 2px;
+   }
+   
+   .card .hover_content {
+     overflow: hidden;
+     max-height: 0;
+     transform: translateY(1em);
+     transition: all 0.55s ease;
+   }
+   
+   .card .hover_content p {
+     margin: 1.5em 0 0;
+     color: #6E6E70;
+     line-height: 1.4em;
+   }
+   
+   .card:hover {
+     width: 24em;
+     box-shadow: 0 10px 20px 0 rgba(32, 32, 36, 0.12);
+   }
+   
+   .card:hover::before {
+     width: 100%;
+     opacity: 1;
+     transition: opacity 0.5s ease, width 0.5s ease;
+     transition-delay: 0;
+   }
+   
+   .card:hover::after {
+     width: 0;
+     opacity: 0;
+     transition: width 0 ease;
+   }
+   
+   .card:hover .logo {
+     margin-bottom: 0.5em;
+   }
+   
+   .card:hover .hover_content {
+     max-height: 10em;
+     transform: none;
+   }
+
+
+#saber-mais {
+
+    height: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+#saber-mais a {
+
+  font-family: "Montserrat";
+  color: #272727;
+  font-size: 20px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+
+
+.container-grid {
+    width: 71vw;
+    max-width: 1237px;
+    margin: 0 auto;
+
+}
+
+.conteudo-contato p {
+
+  font-family: "Montserrat";
+  color: #272727;
+  text-align: left;
+
+  
+  
+}
+
+
+.conteudo-contato {
+
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+
+  flex-direction: column;
+
+}
+
+
+
+
+.card-c {
+  background-color: #fff;
+  border-radius: 0px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat";
+  
+
+  
+}
+
+
+.formulario {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+  width: 500px;
+}
+
+.group {
+  position: relative;
+}
+
+.form .group label {
+  font-size: 14px;
+  color: rgb(99, 102, 102);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  transition: all .3s ease;
+}
+
+.form .group input,
+.form .group textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  outline: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.form .group input:placeholder-shown+ label, .form .group textarea:placeholder-shown +label {
+  top: 10px;
+  background-color: transparent;
+}
+
+.form .group input:focus,
+.form .group textarea:focus {
+  border-color: #a024ff;
+}
+
+.form .group input:focus+ label, .form .group textarea:focus +label {
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  color: #8f00e1;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form .group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form button {
+  background-color: #fefefe;
+  color: #ad0aff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #9900ff;
+  color: #F1F1F1;
+}
+
+
+.card-c {
+
+    margin: 0 auto;
+    padding: 40px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+  height: 100px;
+ 
+}
+
+
+
+footer {
+
+  height: 60px;
+  background-color: #fcfcfc;
+}
+
+footer .container-grid {
+
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icones a {
+  color:#8f00e1;
+}
+
+.icones a:hover {
+
+  color: var(--roxo-motivus);
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .conteudo-banner {
+    background-size: 1000px;
+  } 
+
+  nav.menu{ 
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #sobre{
+    padding-right: 0px;
+    padding-left: 0px;
+
+  }
+
+  #sobre p {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    background-size: 12px;
+  }
+
+  #cases.container-grid{
+
+    width: 100%;
+    margin: unset;
+}
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+.container{
+
+    flex-wrap: nowrap;
+
+    gap: 40px;
+
+    overflow-x: auto;
+}
+
+.card {
+    height: 400px;
+    width: 280px;
+
+    flex-basis: unset;
+}
+
+.card:first-child{
+    margin-left: 30px;
+}
+
+.card:last-child{
+    margin-right: 30px;
+}
+
+
+}
