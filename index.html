@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -30,6 +31,7 @@
                 <a href="#saber-mais">Portfólio </a>
                 <a href="#saber-mais">Contato</a>
             </nav>
+            
             </div>
         </div>
     </header>
@@ -115,9 +117,10 @@
 
       <div class="card-c">
         <span class="title">Leave a Comment</span>
-        <form class="form">
+        <form onsubmit="formulario(event)" class="form">
+
           <div class="group">
-          <input placeholder="" type="text" required="">
+          <input id="name" placeholder="" type="text" required="">
           <label for="name">nome</label>
           </div>
       <div class="group">
