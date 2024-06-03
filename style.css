@@ -36,7 +36,7 @@ header {
 
 header img {
 
-  width: 100px;
+  width: 15%;
   
 
 
@@ -383,7 +383,7 @@ h2 {
    
    .card:hover {
      width: 24em;
-     box-shadow: 0 10px 20px 0 rgba(32, 32, 36, 0.12);
+     box-shadow: 0 10px 20px 0 rgba(135, 135, 138, 0.026);
    }
    
    .card:hover::before {
@@ -606,11 +606,11 @@ footer .container-grid {
 }
 
 .menu-fechado {
-  display: none;
+    display: none;
 }
 
 #icone-barras {
-  display: none;
+    display: none;
 }
 
 
@@ -629,7 +629,7 @@ footer .container-grid {
   }
 
   header svg {
-      fill: rgb(128, 0, 255);
+      fill: var(--roxo-motivus);
   }
   
   nav.menu {
@@ -641,13 +641,15 @@ footer .container-grid {
       flex-direction: column;
       justify-content: space-around;
 
-      background-color: #000000da;
+      background-color: #d5d5d5ed;
 
       position: absolute;
       top: 165px;
       right: 0px;
+      z-index: 1;
   }
 
+  
   #sobre {
       padding: 100px 15%;
   }
@@ -660,8 +662,49 @@ footer .container-grid {
   #contato form {
       width: 75%;
   }
+
+  
 }
 
-@media screen and (max-width: 1080px) {
+
+
+@media screen and (max-width: 1250px) {
+  header img {
+
+    
+    width: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    
   
+  
+  }
+
+  #h2 {
+
+    font-size: 10px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1080px) {
+  header img {
+
+    
+    width: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+  
+  
+  }
+
+  #h2 {
+
+    font-size: 10px;
+  }
 }
